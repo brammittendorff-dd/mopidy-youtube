@@ -1,0 +1,48 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - Python-urllib/2.7
+    method: GET
+    uri: https://www.googleapis.com/youtube/v3/videos?fields=items%28id%2Csnippet%28title%2CchannelTitle%29%2CcontentDetails%28duration%29%29&part=id%2Csnippet%2CcontentDetails&id=e1YqueG2gtQ&key=mock_api_key_for_tests
+  response:
+    body:
+      string: !!python/unicode "{\n \"items\": [\n  {\n   \"id\": \"e1YqueG2gtQ\",\n
+        \  \"snippet\": {\n    \"title\": \"CHVRCHES - Miracle (Official Video)\",\n
+        \   \"channelTitle\": \"ChvrchesVEVO\"\n   },\n   \"contentDetails\": {\n
+        \   \"duration\": \"PT3M18S\"\n   }\n  }\n ]\n}\n"
+    headers:
+      cache-control:
+      - private, max-age=300, must-revalidate, no-transform
+      connection:
+      - close
+      content-length:
+      - '214'
+      content-type:
+      - application/json; charset=UTF-8
+      date:
+      - Tue, 02 Apr 2019 04:34:19 GMT
+      etag:
+      - '"XpPGQXPnxQJhLgs6enD_n8JR4Qk/_7aywKmjt3tZA38MI7cD297mvao"'
+      expires:
+      - Tue, 02 Apr 2019 04:34:19 GMT
+      server:
+      - GSE
+      vary:
+      - Origin
+      - X-Origin
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

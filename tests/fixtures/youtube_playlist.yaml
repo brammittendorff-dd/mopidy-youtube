@@ -1,0 +1,90 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - Python-urllib/2.7
+    method: GET
+    uri: https://www.googleapis.com/youtube/v3/playlistItems?part=id%2Csnippet&pageToken=&fields=nextPageToken%2Citems%28snippet%28title%2CresourceId%28videoId%29%29%29&maxResults=20&key=mock_api_key_for_tests&playlistId=PLOxORm4jpOQfMU7bpfGCzDyLropIYEHuR
+  response:
+    body:
+      string: "{\n \"nextPageToken\": \"CBQQAA\",\n \"items\": [\n  {\n   \"snippet\":
+        {\n    \"title\": \"Don Omar - Danza Kuduro ft. Lucenzo\",\n    \"resourceId\":
+        {\n     \"videoId\": \"7zp1TbLFPp8\"\n    }\n   }\n  },\n  {\n   \"snippet\":
+        {\n    \"title\": \"Enrique Iglesias - EL BA\xD1O ft. Bad Bunny\",\n    \"resourceId\":
+        {\n     \"videoId\": \"gu9_m0vm7fM\"\n    }\n   }\n  },\n  {\n   \"snippet\":
+        {\n    \"title\": \"Pedro Cap\xF3, Farruko - Calma (Remix - Official Video)\",\n
+        \   \"resourceId\": {\n     \"videoId\": \"1_zgKRBrT0Y\"\n    }\n   }\n  },\n
+        \ {\n   \"snippet\": {\n    \"title\": \"Daddy Yankee - Gasolina (V\xEDdeo)
+        [Cl\xE1sico Reggaetonero]\",\n    \"resourceId\": {\n     \"videoId\": \"DYw2yFp6hfE\"\n
+        \   }\n   }\n  },\n  {\n   \"snippet\": {\n    \"title\": \"(\u05DB\u05DC
+        \u05DB\u05DA \u05D9\u05E4\u05D4 \u05DC\u05DA) Rotem cohen - Como El Agua ft.
+        Descemer Bueno\",\n    \"resourceId\": {\n     \"videoId\": \"X9RR895Oook\"\n
+        \   }\n   }\n  },\n  {\n   \"snippet\": {\n    \"title\": \"Luis Fonsi - Sola\",\n
+        \   \"resourceId\": {\n     \"videoId\": \"sKlA0A3ufpc\"\n    }\n   }\n  },\n
+        \ {\n   \"snippet\": {\n    \"title\": \"Anitta - Medicina (Official Music
+        Video)\",\n    \"resourceId\": {\n     \"videoId\": \"UhurAzTl5gs\"\n    }\n
+        \  }\n  },\n  {\n   \"snippet\": {\n    \"title\": \"JOHNNY VAZQUEZ - AZAFATA
+        (Official video with lyrics) 720 HD\",\n    \"resourceId\": {\n     \"videoId\":
+        \"s54_lZKYv_E\"\n    }\n   }\n  },\n  {\n   \"snippet\": {\n    \"title\":
+        \"Edwin Rivera Music- CUANDO YO TE VI'\",\n    \"resourceId\": {\n     \"videoId\":
+        \"lX5AjjBCSsw\"\n    }\n   }\n  },\n  {\n   \"snippet\": {\n    \"title\":
+        \"Orishas - Cuba Isla Bella (Official Video)\",\n    \"resourceId\": {\n     \"videoId\":
+        \"yqdWaWAlZ0s\"\n    }\n   }\n  },\n  {\n   \"snippet\": {\n    \"title\":
+        \"Idilio Leoni Torres\",\n    \"resourceId\": {\n     \"videoId\": \"j0rLxXbgcxU\"\n
+        \   }\n   }\n  },\n  {\n   \"snippet\": {\n    \"title\": \"Cubaneros - Y
+        Me Siento Bien (Feeling Good- Spanish Version)\",\n    \"resourceId\": {\n
+        \    \"videoId\": \"QGh7AXw3tHM\"\n    }\n   }\n  },\n  {\n   \"snippet\":
+        {\n    \"title\": \"Prince Royce - Darte un Beso\",\n    \"resourceId\": {\n
+        \    \"videoId\": \"bdOXnTbyk0g\"\n    }\n   }\n  },\n  {\n   \"snippet\":
+        {\n    \"title\": \"Enrique Iglesias - EL BA\xD1O REMIX (Lyric Video) ft.
+        Bad Bunny, Natti Natasha\",\n    \"resourceId\": {\n     \"videoId\": \"KvuiXm0T0Zs\"\n
+        \   }\n   }\n  },\n  {\n   \"snippet\": {\n    \"title\": \"Romeo Santos -
+        Yo Tambi\xE9n (Official Video) ft. Marc Anthony\",\n    \"resourceId\": {\n
+        \    \"videoId\": \"QBaIMZ8QjcU\"\n    }\n   }\n  },\n  {\n   \"snippet\":
+        {\n    \"title\": \"Los 4 ft Alexander Abreu Havana de Primera _ YO REPRESENTO
+        video dance LOS CORONADO\",\n    \"resourceId\": {\n     \"videoId\": \"FN6JeUKIEGA\"\n
+        \   }\n   }\n  },\n  {\n   \"snippet\": {\n    \"title\": \"Cubaneros - Y
+        Me Siento Bien (Feeling Good- Spanish Version)\",\n    \"resourceId\": {\n
+        \    \"videoId\": \"QGh7AXw3tHM\"\n    }\n   }\n  },\n  {\n   \"snippet\":
+        {\n    \"title\": \"Lost on You-LP (Salsa Version by Cubaneros)\",\n    \"resourceId\":
+        {\n     \"videoId\": \"K_r2pQkI-G8\"\n    }\n   }\n  },\n  {\n   \"snippet\":
+        {\n    \"title\": \"Bele\u0301n Aguilera - Mala Mujer (Dj Manuel Citro Bachata
+        Remix)\",\n    \"resourceId\": {\n     \"videoId\": \"nfegHa_4pT8\"\n    }\n
+        \  }\n  },\n  {\n   \"snippet\": {\n    \"title\": \"Juan Luis Guerra - Fr\xEDo,
+        Fr\xEDo (feat. Romeo Santos) [Live]\",\n    \"resourceId\": {\n     \"videoId\":
+        \"zHhza3EgHe8\"\n    }\n   }\n  }\n ]\n}\n"
+    headers:
+      cache-control:
+      - private, max-age=0, must-revalidate, no-transform
+      connection:
+      - close
+      content-length:
+      - '3104'
+      content-type:
+      - application/json; charset=UTF-8
+      date:
+      - Tue, 02 Apr 2019 04:34:19 GMT
+      etag:
+      - '"XpPGQXPnxQJhLgs6enD_n8JR4Qk/z4XzBrs7TjG82Gtgv6nZ9eMwpGU"'
+      expires:
+      - Tue, 02 Apr 2019 04:34:19 GMT
+      server:
+      - GSE
+      vary:
+      - Origin
+      - X-Origin
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

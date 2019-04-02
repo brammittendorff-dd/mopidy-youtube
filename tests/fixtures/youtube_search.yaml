@@ -9,33 +9,88 @@ interactions:
       User-Agent:
       - Python-urllib/2.7
     method: GET
-    uri: https://www.googleapis.com/youtube/v3/search?q=chvrches&key=mock_api_key_for_tests&part=id&maxResults=10&type=video
+    uri: https://www.googleapis.com/youtube/v3/search?fields=items%28id%2Csnippet%28title%2Cthumbnails%2CchannelTitle%29%29&maxResults=10&q=chvrches&part=id%2Csnippet&key=mock_api_key_for_tests&type=video%2Cplaylist
   response:
     body:
-      string: !!python/unicode "{\n \"kind\": \"youtube#searchListResponse\",\n \"etag\":
-        \"\\\"XpPGQXPnxQJhLgs6enD_n8JR4Qk/5HnDLFkzZTtDvdelnqH5zRicPJY\\\"\",\n \"nextPageToken\":
-        \"CAoQAA\",\n \"regionCode\": \"US\",\n \"pageInfo\": {\n  \"totalResults\":
-        1000000,\n  \"resultsPerPage\": 10\n },\n \"items\": [\n  {\n   \"kind\":
-        \"youtube#searchResult\",\n   \"etag\": \"\\\"XpPGQXPnxQJhLgs6enD_n8JR4Qk/w2Ad1Oy55aR_2Gn9cpLvrhsaCCc\\\"\",\n
-        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"e1YqueG2gtQ\"\n
-        \  }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"XpPGQXPnxQJhLgs6enD_n8JR4Qk/Z5hW9opnsnRKeeeA0CgAJpWFpk8\\\"\",\n
-        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"HHnjuUVgSJ4\"\n
-        \  }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"XpPGQXPnxQJhLgs6enD_n8JR4Qk/N62nNRIBR6JMMA3QHwCDamuj_Rc\\\"\",\n
-        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"4Eo84jDIMKI\"\n
-        \  }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"XpPGQXPnxQJhLgs6enD_n8JR4Qk/rAJJUXaM9VA38z9UTJ32XxDeUQw\\\"\",\n
-        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"LDSVLQoPc8w\"\n
-        \  }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"XpPGQXPnxQJhLgs6enD_n8JR4Qk/3IezfTBiiPjbdpd5swNI4Gjx-jk\\\"\",\n
-        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"_mTRvJ9fugM\"\n
-        \  }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"XpPGQXPnxQJhLgs6enD_n8JR4Qk/fCQdEu4ewMoE-QBLSE1rJSxQQ4k\\\"\",\n
-        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"naOZNWYGutg\"\n
-        \  }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"XpPGQXPnxQJhLgs6enD_n8JR4Qk/W9dQENrUpeEpmfU_HUrA86qf6qs\\\"\",\n
-        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"B9BLMNn0PrQ\"\n
-        \  }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"XpPGQXPnxQJhLgs6enD_n8JR4Qk/QdcyGEy7ozvlcW3AmZtys37_-Zo\\\"\",\n
-        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"zYXgyh-Tot8\"\n
-        \  }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"XpPGQXPnxQJhLgs6enD_n8JR4Qk/GjyLc47sdTqSDcg0cHnYVburu3A\\\"\",\n
-        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"haunJARHPm4\"\n
-        \  }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"XpPGQXPnxQJhLgs6enD_n8JR4Qk/7EQ7MT5JIRPIsfBOzoAGbmyrKZI\\\"\",\n
-        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"KNHxwSp-6Og\"\n
+      string: "{\n \"items\": [\n  {\n   \"id\": {\n    \"kind\": \"youtube#video\",\n
+        \   \"videoId\": \"e1YqueG2gtQ\"\n   },\n   \"snippet\": {\n    \"title\":
+        \"CHVRCHES - Miracle (Official Video)\",\n    \"thumbnails\": {\n     \"default\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/e1YqueG2gtQ/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/e1YqueG2gtQ/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/e1YqueG2gtQ/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"ChvrchesVEVO\"\n
+        \  }\n  },\n  {\n   \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\":
+        \"HHnjuUVgSJ4\"\n   },\n   \"snippet\": {\n    \"title\": \"Marshmello - Here
+        With Me Feat. CHVRCHES [Official Lyric Video]\",\n    \"thumbnails\": {\n
+        \    \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/HHnjuUVgSJ4/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/HHnjuUVgSJ4/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/HHnjuUVgSJ4/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"Marshmello\"\n   }\n  },\n  {\n   \"id\": {\n    \"kind\": \"youtube#video\",\n
+        \   \"videoId\": \"4Eo84jDIMKI\"\n   },\n   \"snippet\": {\n    \"title\":
+        \"CHVRCHES - Leave A Trace\",\n    \"thumbnails\": {\n     \"default\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/4Eo84jDIMKI/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/4Eo84jDIMKI/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/4Eo84jDIMKI/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"ChvrchesVEVO\"\n
+        \  }\n  },\n  {\n   \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\":
+        \"LDSVLQoPc8w\"\n   },\n   \"snippet\": {\n    \"title\": \"CHVRCHES - Graffiti\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/LDSVLQoPc8w/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/LDSVLQoPc8w/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/LDSVLQoPc8w/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"ChvrchesVEVO\"\n   }\n  },\n  {\n   \"id\": {\n    \"kind\": \"youtube#video\",\n
+        \   \"videoId\": \"_mTRvJ9fugM\"\n   },\n   \"snippet\": {\n    \"title\":
+        \"CHVRCHES - The Mother We Share\",\n    \"thumbnails\": {\n     \"default\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/_mTRvJ9fugM/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/_mTRvJ9fugM/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/_mTRvJ9fugM/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"ChvrchesVEVO\"\n
+        \  }\n  },\n  {\n   \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\":
+        \"NRmSf9VqrUA\"\n   },\n   \"snippet\": {\n    \"title\": \"Marshmello - Here
+        With Me Feat. CHVRCHES [Alternative Music Video]\",\n    \"thumbnails\": {\n
+        \    \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/NRmSf9VqrUA/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/NRmSf9VqrUA/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/NRmSf9VqrUA/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"Marshmello\"\n   }\n  },\n  {\n   \"id\": {\n    \"kind\": \"youtube#video\",\n
+        \   \"videoId\": \"B9BLMNn0PrQ\"\n   },\n   \"snippet\": {\n    \"title\":
+        \"CHVRCHES - Bury It ft. Hayley Williams\",\n    \"thumbnails\": {\n     \"default\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/B9BLMNn0PrQ/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/B9BLMNn0PrQ/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/B9BLMNn0PrQ/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"ChvrchesVEVO\"\n
+        \  }\n  },\n  {\n   \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\":
+        \"zYXgyh-Tot8\"\n   },\n   \"snippet\": {\n    \"title\": \"CHVRCHES Live
+        - Austin City Limits Music Festival 2018 - Full Show (without cuts)\",\n    \"thumbnails\":
+        {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/zYXgyh-Tot8/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/zYXgyh-Tot8/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/zYXgyh-Tot8/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"CHVRCHES Fans Latinoam\xE9rica\"\n   }\n  },\n  {\n   \"id\": {\n    \"kind\":
+        \"youtube#video\",\n    \"videoId\": \"haunJARHPm4\"\n   },\n   \"snippet\":
+        {\n    \"title\": \"Chvrches: NPR Music Tiny Desk Concert\",\n    \"thumbnails\":
+        {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/haunJARHPm4/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/haunJARHPm4/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/haunJARHPm4/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"NPR Music\"\n   }\n  },\n  {\n   \"id\": {\n    \"kind\": \"youtube#video\",\n
+        \   \"videoId\": \"KNHxwSp-6Og\"\n   },\n   \"snippet\": {\n    \"title\":
+        \"CHVRCHES - Empty Threat\",\n    \"thumbnails\": {\n     \"default\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/KNHxwSp-6Og/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/KNHxwSp-6Og/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/KNHxwSp-6Og/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"ChvrchesVEVO\"\n
         \  }\n  }\n ]\n}\n"
     headers:
       cache-control:
@@ -43,15 +98,15 @@ interactions:
       connection:
       - close
       content-length:
-      - '2167'
+      - '6133'
       content-type:
       - application/json; charset=UTF-8
       date:
-      - Sun, 31 Mar 2019 02:04:27 GMT
+      - Tue, 02 Apr 2019 04:34:19 GMT
       etag:
-      - '"XpPGQXPnxQJhLgs6enD_n8JR4Qk/5HnDLFkzZTtDvdelnqH5zRicPJY"'
+      - '"XpPGQXPnxQJhLgs6enD_n8JR4Qk/Z0T02q3K2m2b-SYKKcIsvqo8Yho"'
       expires:
-      - Sun, 31 Mar 2019 02:04:27 GMT
+      - Tue, 02 Apr 2019 04:34:19 GMT
       server:
       - GSE
       vary:
