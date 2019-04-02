@@ -16,7 +16,7 @@ before_install:
 
 install:
   - "pip install tox"
-  - "sudo -H pip install youtube-dl"
+  - "pip install youtube-dl"
 
 script:
   - "tox -e $TOX_ENV"
